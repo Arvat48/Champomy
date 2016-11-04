@@ -11,7 +11,7 @@ var app = app.factory('eventsFactory', function ($http, $q) {
                 deferred.resolve(factory.event);
             }
             else {
-                $http.get('http://localhost:3010/events')
+                $http.get('json-server/events')
                     .success(function (data, status) {
                         console.log(data);
                         factory.events = data;
@@ -39,7 +39,7 @@ var app = app.factory('eventsFactory', function ($http, $q) {
         },
 
         postEvent: function (event) {
-            $http.post('http://localhost:3010/events', event)
+            $http.post('json-server/events', event)
                 .success(function (data, status) {
                   
                 }).error(function (data, status) {
