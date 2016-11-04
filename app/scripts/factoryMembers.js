@@ -8,7 +8,7 @@ var app = app.factory('membersFactory', function ($http, $q) {
             if (factory.members !== false) {
                 deferred.resolve(factory.members);
             } else {
-                $http.get('http://localhost:3000/members')
+                $http.get('json-server/members')
                     .success(function (data, status) {
                         factory.members = data;
                         console.log(factory.members);
