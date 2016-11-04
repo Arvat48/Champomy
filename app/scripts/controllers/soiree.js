@@ -91,14 +91,14 @@ var app = app.controller('soireeCtrl', function ($scope, $window, membersFactory
                 personnes: presents
         }
         console.log(event);
-        eventsFactory.putEvent('http://localhost:3010/events/' + id , event);
+        eventsFactory.putEvent('json-server/events/' + id , event);
         $window.location.reload();
     };
     
 
 
     $scope.suppressEvent = function (id) {
-        eventsFactory.deleteEvent('http://localhost:3010/events/' + id);
+        eventsFactory.deleteEvent('json-server/events/' + id);
         $window.location.reload();
     }
 });
