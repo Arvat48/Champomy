@@ -1,0 +1,31 @@
+<br>
+<h1>Veuillez renseigner les champs </h1>
+
+<br>
+<br>
+<form ng-submit="addMember();">
+	<label for="firstName"><h3 class="orange-text text-lighten-2 z-depth-2"><i class=" small material-icons ">perm_identity</i> Prenom</h3></label>
+	<input id="firstName" type="text" placeholder="Prénom" ng-model="newMember.firstName" />
+	
+	<label for="lastname"><h3 class="orange-text text-lighten-1 z-depth-2"><i class=" small material-icons ">perm_identity</i> Nom</h3></label>
+	<input id="lastName" type="text" placeholder="Nom" ng-model="newMember.lastName" />
+	
+	<label for="nickName"><h3 class="orange-text z-depth-2"><i class=" small material-icons ">perm_identity</i> Surnom</h3></label>
+	<input id="nickName" type="text" placeholder="Surnom" ng-model="newMember.nickName" />
+	
+	<label for="location"><h3 class="orange-text text-darken-1 z-depth-2"><i class=" small material-icons ">location_on</i> Location</h3></label>
+	<input type="text" placeholder="Location" ng-model="newMember.location" />
+
+	<label for="promotion"><h3 class="orange-text text-darken-2 z-depth-2"><i class=" small material-icons ">grade</i> Promotion</h3></label>
+	<input id="promotion" type="text" placeholder="Promo" ng-model="newMember.promo">
+
+	<label for="email"><h3 class="orange-text text-darken-3 z-depth-2"><i class=" small material-icons ">email</i> E-mail</h3></label>
+    <input id="email" type="text" placeholder="Email" ng-model="newMember.email">
+	
+	<label for="photo"><h3 class="orange-text text-darken-4 z-depth-2"><i class=" small material-icons ">perm_media</i> Photo (copier l'adresse d'une image internet , ex: Photo de profil Facebook )</h3></label>
+	<input  id="photo" type="text" placeholder="Picture" ng-model="newMember.picture" />
+	<input class="waves-effect waves-light btn orange darken-4 z-depth-2" type="submit" value="Envoyer">
+</form>
+
+<br>
+<br>

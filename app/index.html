@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/main.css -->
+	<!-- Compiled and minified CSS -->
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="styles\css\materialize.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta HTTP-EQUIV="refresh" CONTENT="300">
+	<!-- Compiled and minified JavaScript -->
+
+	<!-- endbuild -->
+</head>
+
+<body ng-app="champomyApp">
+	<!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Add your site or application content here -->
+
+	<!-- Dropdown Structure -->
+
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a class="deep-purple-text text-darken-4" href="#/members">Liste des membres</a></li>
+		<li><a class="deep-purple-text text-darken-4" href="#/soiree">Soirée</a></li>
+		<li><a class="deep-purple-text text-darken-4" href="#!">Gestion des stock</a></li>
+
+		<li class="divider"></li>
+		<li><a class="deep-purple-text text-darken-4" href="#!">Others</a></li>
+	</ul>
+
+
+	<nav>
+		<div class="nav-wrapper deep-purple darken-4">
+			<a href="#" class="brand-logo">Champomy</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+
+
+				<!-- Dropdown Trigger -->
+				<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu</a></li>
+			</ul>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<div ng-view="" class="ng-scope">
+
+	</div>
+
+
+
+
+	<footer class="page-footer deep-purple darken-4">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Champomy Application</h5>
+
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/groups/161870233912839/?fref=ts">Facebook link</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2016 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+
+
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="styles/js/materialize.js"></script>
+
+
+	<script src="scripts\init.js"></script>
+
+	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.14/angular-route.min.js"></script>
+
+
+	<script src="scripts\app.js"></script>
+
+
+	<script src="scripts\controllers\home.js"></script>
+	<script src="scripts\controllers\members.js"></script>
+	<script src="scripts\controllers\addMember.js"></script>
+	<script src="scripts\controllers\soiree.js"></script>
+
+
+	<script src="scripts\factoryMembers.js"></script>
+	<script src="scripts\factorySoiree.js"></script>
+
+
+
+	<!-- endbuild -->
+</body>
+
+</html>
