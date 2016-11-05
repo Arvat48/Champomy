@@ -28,6 +28,11 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+     bower: {
+    install: {
+       //just run 'grunt bower:install' and you'll see files from your Bower packages in lib directory
+    }
+  }
     // Project settings
     yeoman: appConfig,
 
@@ -459,7 +464,6 @@ module.exports = function (grunt) {
     'postcss',
     'ngtemplates',
     'concat',
-    'ngAnnotate',
     'copy:dist',
     'cdnify',
     'cssmin',
@@ -475,4 +479,10 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  
+    grunt.registerTask('heroku:production', [
+  	'bower:install',
+    'build'
+
+]);
 };
